@@ -24,7 +24,7 @@
 }
 .cover .coverlft{
   display: flex;
-  flex-basis: 10%;
+  flex-basis: 12%;
   height: 100%;
   flex-direction: column;
   width: 100%;
@@ -41,8 +41,12 @@
   height: 100vh;
   width: 100%;
   text-align: start;
+  color: #555;
  
 
+}
+.lftCol h3{
+  cursor: pointer;
 }
 .logo{
   height: 10%;
@@ -60,6 +64,7 @@
 .colBottom{
 
   flex-basis: 43vh;
+  padding: 1.2vmax;
    display: flex;
    flex-direction: column;
    justify-content: end;
@@ -74,4 +79,27 @@
 .lftHead>h4{
   color: rgb(250, 120, 47);
   font-weight: lighter;
+}
+.coverrft .content{
+  padding: 20px;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+
+  height: 100%;
+  box-sizing: border-box;
+}
+.cardCover{
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+}
+.cardCover img{
+  width: 100%;
+  border-radius: 10px;
+}
+.content > h1{
+  margin: 2% 3%;
 }

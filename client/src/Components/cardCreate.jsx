@@ -1,15 +1,20 @@
-import React from 'react'
+import React from 'react';
 
-const CardCreate = () => {
+const CardCreate = ({ id, url, Arther,click,styler }) => {
   return (
-<>
-  <div className='cardCover'>
-    <div className='image'></div>
-    <h4>Create a new project</h4>
-    <h5>or try a <span style={{color:'rgb(250, 120, 47)'}}>sample project</span></h5>
-  </div>
-</>
-  )
-}
+    <>
+   <div className='cardCover' onClick={click} style={styler}>
 
-export default CardCreate
+        <div className='image'><img src="/images/new.PNG"/></div>
+        <h4>{Arther}</h4>
+        <h5>or try a <span style={{ color: 'rgb(250, 120, 47)' }}>sample project</span></h5>
+        <div className='readDel'>
+        <h5 style={{cursor:'pointer'}}>Read More-></h5>
+        <h5 style={{color:'red',cursor:'pointer'}}>Delete</h5>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default CardCreate;
